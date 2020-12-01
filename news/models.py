@@ -9,3 +9,5 @@ class News (models.Model):
     photo=models.ImageField(upload_to='NewPhoto/%Y/%m/%d')
     published=models.BooleanField (default=False)
 
+    def __str__(self):
+        return self.title
